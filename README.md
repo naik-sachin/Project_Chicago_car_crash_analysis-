@@ -7,6 +7,7 @@ The data came from the traffic crashes data set that's available to the public o
 
 # Data Exploration:
 Some of the main observations and supporting visuals are as follows: 
+![alt text](https://github.com/snaik21352/Project_Chicago_car_crash_analysis-/blob/main/Images/Cause%20of%20accidents.png)
 I first wanted to look at most occuring crash type and most occuring primary casue . The leading causes will be helpful inormation for the city to take appropriate  measures. The top 5 crash types accounted for 95% of the accidents and the top 5 causes accounted for more than 50% of the accidents. Hit and Run was the top occuring reason and failing to yield right of way was the most occuring type for injuries .In addition, I tooked at the occurence of hit and run accidents and injury resulting accidents by location and by the time of the day and there was no obvious pattern. Both followed the same pattern as the other accidents which was during peak commuter hours which makes sense because A higher number of cars on the road result in a higher number of accidents . Roads with posted speed limit of 30 mphhad the most injury resulting accidents (about 75%).
 
 # Data Modeling:
