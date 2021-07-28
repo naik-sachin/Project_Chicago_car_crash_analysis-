@@ -28,18 +28,19 @@ As we can above see although Hit and run was the highest cause of accidents only
 <p align="center">
 <img src = "https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/injury_breakdown.png">
 </p>
- W
 
-I looked at the occurence of hit and run accidents and by the time of the day and there was no obvious pattern. Both followed the same pattern as the other accidents which was during peak commuter hours which makes sense beause a higher number of cars on the road result in a higher number of accidents.
-The graphs for the same can be seen below.
-
-![alt text](https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/injury%20resulting_by_hour.png)
+* I looked at the occurence of hit and run accidents and by the time of the day and there was no obvious pattern. There were more injuries during peak commuter hours which makes sense beause a higher number of cars on the road result in a higher number of accidents. I also looked at injury resulting accidents by day of the week. As seen below there were more accidents that resulted in injuries during the weekend.
 
 ![alt text](https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/injury%20resulting_by_week.png)
 
+* Number of injury resulting accidents were higher in the fall especially in the month of October. This is probably due to poor visibility in the Fall and/or due to the holdiay season.
+
+![alt text](https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/injury%20resulting_by_month.png)
+
 ![alt text](https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/map.png)
 
-Roads with posted speed limit of 30 mphhad the most injury resulting accidents (about 75%).
+* As seen below Roads with posted speed limit of 30 mph had the most injury resulting accidents (about 75%).
+![alt text](https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/Speed_limit.png)
 
 # Data Modeling:
 I Used a decision tree classifier to model and classify hit and run injury resulting accidents. There was some imbalance in classes as only about a fourth of the accidents were hit and run cases so i had to generate some synthetic data. I eliminated irrelevant features recursively from 21 to 19 and i was able to get the accuracy to 72%. Tuning the hyperparameter of the classifier I was able get the accuracy upto 79% . I further used meta estimators like random forests and bagging classifier and got the accuracy upto about 85%. 
