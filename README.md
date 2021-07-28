@@ -37,10 +37,19 @@ As we can above see although Hit and run was the highest cause of accidents only
 
 ![alt text](https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/injury%20resulting_by_month.png)
 
+* As seen below geographically, the only noticaeble cluster passing thru lat 41.9 is unusual. Besides that, injury resulting accidents had the same spread as accidents in general.
+
 ![alt text](https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/map.png)
 
 * As seen below Roads with posted speed limit of 30 mph had the most injury resulting accidents (about 75%).
 ![alt text](https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/Speed_limit.png)
+
+Overall I would recommend 
+* A higher amount of security cameras can help mitigiate hit and run accidents.
+* To reduce the number of motorists disregarding traffic signals, the city should consider more severe penalties and heavier fines.
+* Speed bumps can be useful in mitigatin rear end accidents especially on roads with speed limit of 30mph.
+* More policing during peak commuter hours and weekends will also help reduce the number of accidents.
+* More data is required to assess the unuusally high occurences in October,but at this point the city should consider investing in more street lights as that would also help reducing the number of accidents during late hours.
 
 # Data Modeling:
 I Used a decision tree classifier to model and classify hit and run injury resulting accidents. There was some imbalance in classes as only about a fourth of the accidents were hit and run cases so i had to generate some synthetic data. I eliminated irrelevant features recursively from 21 to 19 and i was able to get the accuracy to 72%. Tuning the hyperparameter of the classifier I was able get the accuracy upto 79% . I further used meta estimators like random forests and bagging classifier and got the accuracy upto about 85%. 
