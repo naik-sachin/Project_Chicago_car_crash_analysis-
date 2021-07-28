@@ -7,8 +7,10 @@ The data came from the traffic crashes data set that's available to the public o
 
 # Data Exploration:
 Some of the main observations and supporting visuals are as follows: 
+<p align="center">
+ <img src="https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/ACcidents_by_year.png" width="400" height="400">
+</p>
 
-<img src="https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/ACcidents_by_year.png" width="400" height="400">
 
 As we can see above Injury resulting accidents have increased over the past few year. The decline in 2020 is probably due to fewer cars on the road due to covid. This warrants the cities concern for road safety.
 
