@@ -8,16 +8,27 @@ The data came from the traffic crashes data set that's available to the public o
 # Data Exploration:
 Some of the main observations and supporting visuals are as follows: 
 
-![alt text](Images/injury_tesulting.png)
+<img src="https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/ACcidents_by_year.png" width="400" height="400">
 
-I first wanted to look at most occuring crash type and most occuring primary cause of accidents in Chicago . The top 10 causes of accidents accounted for about 93% of the accidents. As seen in the graph above, Hit and Run was the highest cause of  accidents  accounting for nearly 23% of them. Rear end accidents were the most occuring type of accidents. 
-Next I wanted to see 
+As we can see above Injury resulting accidents have increased over the past few year. The decline in 2020 is probably due to fewer cars on the road due to covid. This warrants the cities concern for road safety.
+
+![alt text](https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/Cause%20of%20accidents.png)
+
+To get a sense of the nature of accidents in terms of cause and type, I first looaked at most occuring crash type and most occuring primary cause of accidents in Chicago . The top 10 causes of accidents accounted for about 93% of the accidents. As seen in the graph above, Hit and Run was the highest cause of  accidents  accounting for nearly 23% of them. Rear end accidents were the most occuring type of accidents. 
+
+Next I looked at the cause of accidents, more specifically what percent of each cause resulted in injuries. 
+
+![alt text](https://github.com/naik-sachin/Project_Chicago_car_crash_analysis-/blob/main/Images/injury_resulting.png)
+As we can see although Hit and run was the highest cause of accidents only  a small proportion of them resulted in injuries. Discarding Traffic signals resulted in the highest ratio of iunjury resulting accidents.
 
 <br/> Considering Hit and Run accidents was the most ooccuring cause and among the top 3 to result in injuries. I focused the remainder of this analysis on traffic accidents that resulted in injuries. I first looked at the breakdown of types of injuries as seen below:
 
 ![alt text](Images/injury_breakdown.png)
+ We can see that the majority of the accidents were non-incapacitating with a very small percent resulting into a fatality.
+ 
 Failing to yield right-of-way had the highest proportion of injury resulting instances. 
-I tooked at the occurence of hit and run accidents and injury resulting accidents by location and by the time of the day and there was no obvious pattern. Both followed the same pattern as the other accidents which was during peak commuter hours which makes sense because a higher number of cars on the road result in a higher number of accidents . Roads with posted speed limit of 30 mphhad the most injury resulting accidents (about 75%).
+I tooked at the occurence of hit and run accidents and injury resulting accidents by location and by the time of the day and there was no obvious pattern. Both followed the same pattern as the other accidents which was during peak commuter hours which makes sense be
+ause a higher number of cars on the road result in a higher number of accidents . Roads with posted speed limit of 30 mphhad the most injury resulting accidents (about 75%).
 
 # Data Modeling:
 I Used a decision tree classifier to model and classify hit and run injury resulting accidents. There was some imbalance in classes as only about a fourth of the accidents were hit and run cases so i had to generate some synthetic data. I eliminated irrelevant features recursively from 21 to 19 and i was able to get the accuracy to 72%. Tuning the hyperparameter of the classifier I was able get the accuracy upto 79% . I further used meta estimators like random forests and bagging classifier and got the accuracy upto about 85%. 
